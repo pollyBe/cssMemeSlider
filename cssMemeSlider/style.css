@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(66deg, #e38010, #1535bf);
+}
+
+.slider-title {
+  font-size: 3em;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+}
+
+.slider {
+  padding: 3.125em 1.25em;
+}
+
+.slider-body-wrap {
+  
+}
