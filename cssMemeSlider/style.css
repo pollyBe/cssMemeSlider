@@ -34,7 +34,6 @@ body {
 
 .slide_img {
   width: 100%;
-  margin-bottom: 2rem;
   border-radius: 1.5625rem;  
   transition: 0.5s ease-in-out;
 }
@@ -42,13 +41,14 @@ body {
 .text-for-slides {
   display: flex;
   width: 400%;
+  overflow: hidden;
   transition: transform 0.5s ease-in-out; 
 }
 
 .slide-text {
   display: block;
-  width: 80%;
-  transform: translateY(-350%);
+  width: 100%;
+  /* transform: translateY(-350%); */
 }
 
 .slide-text p {
@@ -59,9 +59,9 @@ body {
 
 .paginationBtns {
   display: flex;
-  width: 15%;
+  max-width: 15%;
   justify-content: space-between;
-  transform: translateX(550%) translateY(-300%);
+  transform: translateX(550%);
 }
 
 input {
@@ -101,4 +101,21 @@ input {
 
 #slide_4:checked ~ .slides {
   transform: translateX(-300%);
+}
+
+
+#slide_1:checked ~ .text-for-slides {
+  transform: translateX(0%);
+}
+
+#slide_2:checked ~ .text-for-slides {
+  transform: translateX(-25%);
+}
+
+#slide_3:checked ~ .text-for-slides {
+  transform: translateX(-50%);
+}
+
+#slide_4:checked ~ .text-for-slides {
+  transform: translateX(-75%);
 }
